@@ -1,0 +1,11 @@
+version: '3'
+services:
+  btcpd:
+    tty: true
+    build: .
+    restart: always
+    image: btcp:0.0.1
+    volumes:
+     - ./data:/bitcoin-private/data
+     - ./coin.conf:/root/.btcprivate/btcprivate.conf
+     - ./coin.conf:/bitcoin-private/btcprivate.conf
