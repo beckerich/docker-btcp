@@ -6,6 +6,8 @@ services:
     restart: always
     image: btcp:0.0.1
     volumes:
-     - ./data:/bitcoin-private/data
+     - ./data:/coin/data
      - ./coin.conf:/root/.btcprivate/btcprivate.conf
-     - ./coin.conf:/bitcoin-private/btcprivate.conf
+     - ./coin.conf:/coin/btcprivate.conf
+    ports:
+       - 7932:7932
