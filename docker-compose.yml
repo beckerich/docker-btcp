@@ -2,9 +2,8 @@ version: '3'
 services:
   btcpd:
     tty: true
-    build: .
     restart: always
-    image: hbeckeri/docker-btcpd:latest
+    image: hbeckeri/btcpd:latest
     volumes:
      - ./data:/coin/data
      - ./coin.conf:/root/.btcprivate/btcprivate.conf
