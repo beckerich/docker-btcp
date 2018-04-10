@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:stretch-slim
 
 # Get Dependencies
 RUN apt-get update && apt-get -y upgrade
