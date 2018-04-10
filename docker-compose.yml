@@ -9,4 +9,5 @@ services:
      - ./coin.conf:/root/.btcprivate/btcprivate.conf
      - ./coin.conf:/coin/data/btcprivate.conf
     ports:
-       - 7932:7932
+       - 3000:3000
+       - 3001:3001

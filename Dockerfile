@@ -20,5 +20,6 @@ WORKDIR /coin
 RUN cp /tmp/coin-daemon/src/btcpd ./daemon
 RUN cp /tmp/coin-daemon/src/btcp-cli ./cli
 
-EXPOSE 7932
+EXPOSE 3000
+EXPOSE 3001
 CMD ./daemon --datadir=/coin/data
