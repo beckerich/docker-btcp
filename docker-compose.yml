@@ -3,7 +3,7 @@ services:
   btcpd:
     tty: true
     restart: always
-    image: hbeckeri/btcpd
+    image: hbeckeri/btcpd:1.0.0
     volumes:
      - ./data:/coin/data
      - ./coin.conf:/root/.btcprivate/btcprivate.conf
