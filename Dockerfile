@@ -9,7 +9,7 @@ RUN apt-get -y install \
 	zlib1g-dev wget bsdmainutils automake
 
 # Build
-RUN git clone --branch 1.0.11-5d06772 https://github.com/BTCPrivate/BitcoinPrivate.git /tmp/coin-daemon
+RUN git clone https://github.com/BTCPrivate/BitcoinPrivate.git /tmp/coin-daemon
 WORKDIR /tmp/coin-daemon
 RUN ./btcputil/fetch-params.sh
 RUN ./btcputil/build.sh -j$(nproc)
